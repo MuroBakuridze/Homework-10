@@ -1,0 +1,22 @@
+@import './../../moduls/variable.scss';
+@import'./../../moduls/mixins.scss';
+@import'./../../moduls/private.scss';
+@import'./../../moduls/functions.scss';
+
+header{
+  background-color: $red;
+  padding: 15px;
+  .flex{
+    display: flex;
+      .logo{
+        font-size: $size03;
+      }
+      .navbar{
+        @include display(flex);
+          .navbar-li{
+            font-size: $size02;
+            margin: 0 10px;
+          }
+      }
+  }
+}
